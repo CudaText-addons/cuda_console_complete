@@ -3,7 +3,7 @@ title=Console Auto-Completion
 desc=Adds auto-completion to the built-in Console
 type=cudatext-plugin
 subdir=cuda_console_complete
-homepage=https://github.com/halfbrained/cuda_console_complete
+homepage=https://github.com/CudaText-addons/cuda_console_complete
 api=1.0.444
 
 [item1]
