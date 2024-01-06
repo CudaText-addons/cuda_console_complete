@@ -8,7 +8,7 @@ api=1.0.444
 
 [item1]
 section=events
-events=on_save,on_console_complete
+events=on_save~,on_console_complete
 
 [item10]
 section=commands
