@@ -50,6 +50,13 @@ class Command:
     ini_write(fn_config, SECTION, 'add_func_params', value=bool_to_str(add_func_params))
     file_open(fn_config)
 
+    lines = [ed.get_text_line(i) for i in range(ed.get_line_count())]
+    try:
+      index = lines.index('['+SECTION+']')
+      ed.set_caret(0, index)
+    except:
+      pass
+
   def on_save(self, ed_self):
     if ed_self.get_filename() == fn_config:
       self.load_cfg()
